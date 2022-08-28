@@ -9,4 +9,8 @@ Just enter the following commands sequentially if you already have an AWS accoun
 
 You can test it via postman or your terminal. After all things are done don't forget to enter the following command to destroy all resources.
 
+```
+curl "$(terraform output -raw base_url)/hello?name=MyName"
+```
+
 - make destroy
